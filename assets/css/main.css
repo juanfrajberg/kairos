@@ -1366,6 +1366,11 @@ section,
   justify-content: center;
 }
 
+.ai-bot {
+  border-radius: 16px;
+  box-shadow: 0px 0 30px rgba(0, 0, 0, 0.1);
+}
+
 @media (min-width: 576px) {
   .ai-bot {
     max-width: 516px;
