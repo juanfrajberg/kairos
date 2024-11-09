@@ -888,36 +888,82 @@ section,
 }
 
 /*--------------------------------------------------------------
-# Features Section
+# App Section
 --------------------------------------------------------------*/
-.features .feature-box {
-  background-color: var(--surface-color);
-  padding: 24px 20px;
-  box-shadow: 0px 0 30px rgba(0, 0, 0, 0.1);
-  transition: 0.3s;
-  height: 100%;
+.app .app-item .app-icon {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: color-mix(in srgb, var(--accent-color), transparent 92%);
+  transition: all 0.3s ease-in-out;
 }
 
-.features .feature-box h3 {
-  font-size: 18px;
-  font-weight: 700;
-  margin: 0;
-}
-
-.features .feature-box i {
-  background: color-mix(in srgb, var(--accent-color), transparent 92%);
-  color: var(--accent-color);
-  line-height: 0;
-  padding: 4px;
-  margin-right: 10px;
+.app .app-item .app-icon i {
   font-size: 24px;
-  border-radius: 3px;
-  transition: 0.3s;
+  color: var(--accent-color);
+  transition: .3s;
 }
 
-.features .feature-box:hover i {
-  background: var(--accent-color);
-  color: var(--contrast-color);
+.flex-app {
+  flex-direction: row-reverse;
+}
+
+.app-icon:hover {
+  background: var(--accent-color) !important;
+}
+
+.app-icon:hover > i {
+  color: var(--contrast-color) !important;
+}
+
+.app-icon.hovered {
+  background: var(--accent-color) !important;
+}
+
+.bi.hovered {
+  color: var(--contrast-color) !important;
+}
+
+.app .app-item .app-content h3 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.app .app-item .app-content p {
+  color: color-mix(in srgb, var(--default-color), transparent 25%);
+  font-size: 15px;
+  margin-bottom: 0;
+}
+
+.app .phone-mockup {
+  position: relative;
+}
+
+.app .phone-mockup img {
+  max-width: 300px;
+  height: auto;
+  filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.25));
+}
+
+@media (max-width: 991.98px) {
+  .app .app-item {
+    text-align: center !important;
+    margin-bottom: 2rem;
+  }
+
+  .app .app-item .d-flex {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center !important;
+  }
+
+  .app .phone-mockup {
+    margin: 3rem 0;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -1022,6 +1068,39 @@ section,
   z-index: 1;
   font-size: 14px;
   padding: 1px 0 3px 0;
+  background: var(--accent-color);
+  color: var(--contrast-color);
+}
+
+/*--------------------------------------------------------------
+# Features Section
+--------------------------------------------------------------*/
+.features .feature-box {
+  background-color: var(--surface-color);
+  padding: 24px 20px;
+  box-shadow: 0px 0 30px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+  height: 100%;
+}
+
+.features .feature-box h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.features .feature-box i {
+  background: color-mix(in srgb, var(--accent-color), transparent 92%);
+  color: var(--accent-color);
+  line-height: 0;
+  padding: 4px;
+  margin-right: 10px;
+  font-size: 24px;
+  border-radius: 3px;
+  transition: 0.3s;
+}
+
+.features .feature-box:hover i {
   background: var(--accent-color);
   color: var(--contrast-color);
 }

@@ -171,3 +171,31 @@ navMobile.addEventListener("click", () => {
 }
     
 })
+
+
+
+
+
+
+
+
+
+const appItems = document.querySelectorAll('.app-item'); // Seleccionamos todos los items de la app
+
+appItems.forEach((appItem) => {
+  const appContent = appItem.querySelector('.app-content'); // Obtenemos el contenido
+  const appIcon = appItem.querySelector('.app-icon'); // Obtenemos el icono
+  const iconBi = appIcon.querySelector('.bi'); // Seleccionamos el icono específico dentro de .app-icon
+
+  appContent.addEventListener('mouseenter', () => {
+    appIcon.classList.add('hovered');
+    iconBi.classList.add('hovered');
+  });
+
+  appContent.addEventListener('mouseleave', () => {
+    appIcon.classList.remove('hovered');
+    iconBi.classList.remove('hovered');
+  });
+});
+
+
