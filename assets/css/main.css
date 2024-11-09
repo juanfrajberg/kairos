@@ -907,10 +907,6 @@ section,
   transition: .3s;
 }
 
-.flex-app {
-  flex-direction: row-reverse;
-}
-
 .app-icon:hover {
   background: var(--accent-color) !important;
 }
@@ -953,6 +949,10 @@ section,
   .app .app-item {
     text-align: center !important;
     margin-bottom: 2rem;
+  }
+
+  .flex-app {
+    flex-direction: column-reverse !important;
   }
 
   .app .app-item .d-flex {
