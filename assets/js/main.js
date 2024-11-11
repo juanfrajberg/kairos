@@ -172,14 +172,6 @@ navMobile.addEventListener("click", () => {
     
 })
 
-
-
-
-
-
-
-
-
 const appItems = document.querySelectorAll('.app-item'); // Seleccionamos todos los items de la app
 
 appItems.forEach((appItem) => {
@@ -199,3 +191,22 @@ appItems.forEach((appItem) => {
 });
 
 
+// Función para cargar el archivo JSON
+function cargarTextos() {
+  // Crear una nueva instancia de XMLHttpRequest para cargar archivos locales
+  var xhr = new XMLHttpRequest();
+  xhr.open('GET', 'texts.json', true);  // Se carga el archivo textos.json
+  xhr.onreadystatechange = function() {
+      if (xhr.readyState == 4 && xhr.status == 200) {
+          // Si la respuesta es exitosa, procesamos el archivo JSON
+          var data = JSON.parse(xhr.responseText);
+
+          // Asignar los textos al HTML
+          document.getElementById('title').textContent = data.title;
+      }
+  };
+  xhr.send();  // Enviar la solicitud
+}
+
+// Cargar los textos cuando la página se haya cargado
+window.onload = cargarTextos;
