@@ -966,6 +966,36 @@ section,
   }
 }
 
+.mobile-frame {
+  width: 300px;
+  height: 606.516px;
+  background-image: url("../img/phone-bg.png");
+  background-size: cover;
+  position: relative;
+  margin: 0 auto;
+  z-index: 1000;
+  user-select: none;
+  pointer-events: none;
+}
+
+.swiper-container {
+  width: 300px; 
+  height: 100%;
+  position: absolute;
+  z-index: 100; 
+  margin: 0 auto;
+  left: 0px;
+  right: 0;
+  overflow: hidden;
+  top: 0;
+}
+
+.swiper-slide {
+  background-image: url("../img/phone-screen-1.png");
+  background-size: cover;
+  
+}
+
 /*--------------------------------------------------------------
 # Pricing Section
 --------------------------------------------------------------*/

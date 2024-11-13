@@ -210,3 +210,10 @@ function cargarTextos() {
 
 // Cargar los textos cuando la página se haya cargado
 window.onload = cargarTextos;
+
+
+//Swiper
+const swiper = new Swiper('.swiper-container', {
+  direction: 'horizontal',
+  loop: true,
+});
