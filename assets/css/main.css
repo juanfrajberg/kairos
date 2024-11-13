@@ -978,6 +978,21 @@ section,
   pointer-events: none;
 }
 
+.ui-frame {
+  width: 300px;
+  height: 606.516px;
+  background-image: url("../img/phone-ui.png");
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  z-index: 1000;
+  user-select: none;
+  pointer-events: none;
+}
+
 .swiper-container {
   width: 300px; 
   height: 100%;
