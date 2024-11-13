@@ -217,3 +217,19 @@ const swiper = new Swiper('.swiper-container', {
   direction: 'horizontal',
   loop: true,
 });
+
+//To fix error in App section
+function updateMarginTop() {
+  const element = document.querySelector(".mt-element");
+  const width = window.innerWidth;
+
+  if (width <= 922) {
+      element.style.marginTop = "48px";
+  } else {
+    element.style.marginTop = "0px";
+  }
+}
+
+updateMarginTop();
+
+window.addEventListener("resize", updateMarginTop)
