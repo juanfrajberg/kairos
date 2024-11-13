@@ -216,6 +216,13 @@ window.onload = cargarTextos;
 const swiper = new Swiper('.swiper-container', {
   direction: 'horizontal',
   loop: true,
+  autoplay: {
+    delay: 1500, // Tiempo en milisegundos entre cada cambio de slide
+    disableOnInteraction: false, // No detener el autoplay al interactuar con el swiper
+  },
+  speed: 1000,
+  // effect: 'fade', // Desvanecer los slides
+  easing: 'ease-in-out', // Tipo de suavidad en la transición
 });
 
 //To fix error in App section
