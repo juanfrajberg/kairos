@@ -218,7 +218,7 @@ const swiper = new Swiper('.swiper-container', {
   loop: true,
   autoplay: {
     delay: 1500, // Tiempo en milisegundos entre cada cambio de slide
-    disableOnInteraction: false, // No detener el autoplay al interactuar con el swiper
+    disableOnInteraction: true, // No detener el autoplay al interactuar con el swiper
   },
   speed: 1000,
   // effect: 'fade', // Desvanecer los slides
