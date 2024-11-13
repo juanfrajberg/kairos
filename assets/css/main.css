@@ -1513,6 +1513,9 @@ section,
   .ai-bot {
     max-width: 936px;
   }
+  #m-top-app {
+    margin-top: 48px !important;
+  }
 }
 
 @media (min-width: 1200px) {
