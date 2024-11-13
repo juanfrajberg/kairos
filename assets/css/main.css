@@ -1005,8 +1005,13 @@ section,
   top: 0;
 }
 
-.swiper-slide {
+.slide-1 {
   background-image: url("../img/phone-screen-1.png");
+  background-size: cover;
+}
+
+.slide-2 {
+  background-image: url("../img/phone-screen-2.png");
   background-size: cover;
 }
 
