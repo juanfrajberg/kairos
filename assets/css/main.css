@@ -981,7 +981,7 @@ section,
 .ui-frame {
   width: 300px;
   height: 606.516px;
-  background-image: url("../img/phone-ui.png");
+  background-image: url("../img/phone-ui-white.png");
   background-size: cover;
   position: absolute;
   top: 0;
@@ -991,6 +991,11 @@ section,
   z-index: 1000;
   user-select: none;
   pointer-events: none;
+  transition: .3s;
+}
+
+.ui-frame.active {
+  background-image: url("../img/phone-ui-black.png");
 }
 
 .swiper-container {

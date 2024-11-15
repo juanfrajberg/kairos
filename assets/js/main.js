@@ -225,6 +225,21 @@ const swiper = new Swiper('.swiper-container', {
   easing: 'ease-in-out', // Tipo de suavidad en la transición
 });
 
+const uiFrame = document.querySelector(".ui-frame");
+
+console.log(uiFrame);
+
+swiper.on('slideChange', function () {
+  
+  console.log(swiper.realIndex);
+
+  if (swiper.realIndex == 1) {
+    uiFrame.classList.remove("active");
+    
+  } else {
+    uiFrame.classList.add("active");
+  }
+});
 
 
 //To fix error in App section
