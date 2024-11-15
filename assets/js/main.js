@@ -233,7 +233,7 @@ swiper.on('slideChange', function () {
   
   console.log(swiper.realIndex);
 
-  if (swiper.realIndex == 1) {
+  if (swiper.realIndex == 1 || swiper.realIndex == 2) {
     uiFrame.classList.remove("active");
     
   } else {

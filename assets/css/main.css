@@ -1020,6 +1020,11 @@ section,
   background-size: cover;
 }
 
+.slide-3 {
+  background-image: url("../img/phone-screen-3.png");
+  background-size: cover;
+}
+
 /*--------------------------------------------------------------
 # Pricing Section
 --------------------------------------------------------------*/
